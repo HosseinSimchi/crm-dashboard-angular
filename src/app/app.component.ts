@@ -19,6 +19,7 @@ export class AppComponent {
     {
       code: 'hi',
       name: 'Hindi',
+      
     },
   ];
 
