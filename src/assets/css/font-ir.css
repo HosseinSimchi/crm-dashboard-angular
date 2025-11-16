@@ -74,7 +74,7 @@
   * Fonts
   */
 h1 {
-  font-family: "Gofteh", Sans-serif !important;
+  font-family: "IRANSans", Sans-serif !important;
 }
 
 h2,
@@ -82,7 +82,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Morabba", Sans-serif !important;
+  font-family: "IRANSans", Sans-serif !important;
 }
 
 p,
@@ -99,19 +99,31 @@ p,
 .card-header h4,
 .countdown-timer h3,
 h2.amount {
-  font-family: "YekanBakhFaNum-Regular", Sans-serif !important;
+  font-family: "IRANSans", Sans-serif !important;
 }
 
 .autoplay-progress {
   font-size: 80%;
 }
 
-
-*:not(h1, h2, h3, h4, h5, h6, i, p, div,.fa,code,.ri-star-fill,.ri-star-line,
-.fc-icon) {
-  font-family: "IRANYekanX", Sans-serif !important;
+*:not(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    i,
+    p,
+    div,
+    .fa,
+    code,
+    .ri-star-fill,
+    .ri-star-line,
+    .fc-icon
+  ) {
+  font-family: "IRANSans", Sans-serif !important;
 }
-
 
 /*-----------------------------------
   RTL Direction Setup
@@ -125,8 +137,10 @@ body {
 }
 .apexcharts-legend-series,
 .apexcharts-tooltip.apexcharts-active,
-.select2-container--default .select2-results>.select2-results__options,
-.select2-container--default .select2-selection--single .select2-selection__rendered {
+.select2-container--default .select2-results > .select2-results__options,
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
   direction: rtl !important;
 }
 .apexcharts-tooltip-series-group.apexcharts-active .apexcharts-tooltip-marker {
@@ -145,7 +159,7 @@ body {
 }
 
 .ri-star-half-line {
-  transform: scale(-1,1);
+  transform: scale(-1, 1);
 }
 
 pre,
