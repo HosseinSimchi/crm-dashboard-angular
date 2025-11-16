@@ -1,8 +1,8 @@
-<ul>
-  @for (item of languages; track $index) {
-  <li>
-    <a (click)="selectLanguage(item)">{{ item.name }}</a>
-  </li>
-  }
-</ul>
-<h2 i18n>{{ translationService.translate("title") }}</h2>
+<h2>Counter: {{ value$ | async }}</h2>
+
+<input type="number" [(ngModel)]="customAmount" placeholder="Amount" />
+
+<button (click)="increment()">+ Increment</button>
+<button (click)="decrement()">- Decrement</button>
+<button (click)="reset()">Reset</button>
+<button (click)="resetToCustom()">Reset to Custom</button>

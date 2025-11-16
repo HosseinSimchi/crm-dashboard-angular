@@ -9617,7 +9617,6 @@ div.dataTables_wrapper div.dataTables_filter input {
 /*  3.3 app header css
 /*----------------------------------------*/
 .app-content-area {
-  padding-inline-start: 260px;
   min-height: calc(100vh - 146px);
   margin-top: 93px;
   transition: all 0.3s ease-in-out;
@@ -9651,7 +9650,6 @@ div.dataTables_wrapper div.dataTables_filter input {
   top: 0;
   z-index: 19;
   width: 100%;
-  padding-inline-start: 260px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .app-header-area {
