@@ -6,10 +6,12 @@ import { Observable } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { CounterActions } from './store/states/counter/counter.actions';
 import { counterFeature } from './store/states/counter/counter.reducer';
+import { headerFeature } from './store/states/header/header.reducer';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -43,29 +45,4 @@ export class AppComponent {
   getState: any;
 
   ngOnInit(): void {}
-
-  store = inject(Store);
-
-  value$: Observable<number> = this.store.select(counterFeature.selectValue);
-  customAmount: number = 5;
-
-  increment() {
-    this.store.dispatch(
-      CounterActions.increment({ amount: this.customAmount })
-    );
-  }
-
-  decrement() {
-    this.store.dispatch(
-      CounterActions.decrement({ amount: this.customAmount })
-    );
-  }
-
-  reset() {
-    this.store.dispatch(CounterActions.reset({})); // resets to 0
-  }
-
-  resetToCustom() {
-    this.store.dispatch(CounterActions.reset({ value: this.customAmount }));
-  }
 }
