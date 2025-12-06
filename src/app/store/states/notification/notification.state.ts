@@ -7,6 +7,7 @@ export interface NotificationState {
     desc: string;
     date: string;
   }[];
+  btnText: string;
 }
 
 export const initialStateNotification: NotificationState = {
@@ -50,4 +51,5 @@ export const initialStateNotification: NotificationState = {
       date: '3 ساعت پیش',
     },
   ],
+  btnText: 'مشاهده همه اعلان ها',
 };
