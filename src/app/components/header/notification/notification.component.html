@@ -35,9 +35,6 @@
     }
   </ul>
 </li>
-//TODO: Add to NGrX
 <li class="dropdown-notifications-btn">
-  <a class="btn btn-primary w-100" href="javascript:void(0);"
-    >مشاهده همه اعلان ها</a
-  >
+  <app-button [text]="(this.notificationState$ | async)?.btnText"></app-button>
 </li>

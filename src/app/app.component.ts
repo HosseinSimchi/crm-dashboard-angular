@@ -8,10 +8,12 @@ import { CounterActions } from './store/states/counter/counter.actions';
 import { counterFeature } from './store/states/counter/counter.reducer';
 import { headerFeature } from './store/states/header/header.reducer';
 import { HeaderComponent } from './components/header/header.component';
+import { SubHeaderComponent } from "./components/sub-header/sub-header.component";
+import { OrderChartComponent } from "./components/order-chart/order-chart.component";
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, FormsModule, HeaderComponent],
+  imports: [CommonModule, FormsModule, HeaderComponent, SubHeaderComponent, OrderChartComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
