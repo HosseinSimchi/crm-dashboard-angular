@@ -17,19 +17,21 @@ export class ChartsComponent {
   ngAfterViewInit(): void {
     const chartDom = document.getElementById(this.chartId())!;
 
-    const myChart = echarts.init(chartDom);
+    if (chartDom) {
+      const myChart = echarts.init(chartDom);
 
-    const option = CHART_OPTIONS;
+      const option = CHART_OPTIONS;
 
-    option.tooltip = this.chartInfo().tooltip;
-    option.legend.data = this.chartInfo().data;
-    option.xAxis.type = this.chartInfo().xAxis.type;
-    option.xAxis.data = this.chartInfo().xAxis.data;
+      option.tooltip = this.chartInfo().tooltip;
+      option.legend.data = this.chartInfo().data;
+      option.xAxis.type = this.chartInfo().xAxis.type;
+      option.xAxis.data = this.chartInfo().xAxis.data;
 
-    option.yAxis.type = this.chartInfo().yAxis.type;
+      option.yAxis.type = this.chartInfo().yAxis.type;
 
-    option.series = this.chartInfo().series;
+      option.series = this.chartInfo().series;
 
-    myChart.setOption(option);
+      myChart.setOption(option);
+    }
   }
 }

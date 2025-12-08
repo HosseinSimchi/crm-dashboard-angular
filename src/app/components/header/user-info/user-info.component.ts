@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
-import { Store } from '@ngrx/store';
 import { userInfoFeature } from '../../../store/states/user-info/user-info.reducer';
 import { CommonModule } from '@angular/common';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-user-info',

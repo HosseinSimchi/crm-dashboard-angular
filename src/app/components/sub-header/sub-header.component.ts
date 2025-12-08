@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
 import { subHeaderFeature } from '../../store/states/sub-header/sub-header.reducer';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-sub-header',
