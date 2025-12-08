@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { notificationFeature } from '../../../store/states/notification/notification.reducer';
 import { CommonModule } from '@angular/common';
+import { Store } from '@ngrx/store';
 import { ButtonComponent } from '../../../../shared/components/button/button.component';
+import { notificationFeature } from '../../../store/states/notification/notification.reducer';
 
 @Component({
   selector: 'app-notification',
@@ -12,6 +12,7 @@ import { ButtonComponent } from '../../../../shared/components/button/button.com
 })
 export class NotificationComponent {
   store = inject(Store);
+
   notificationState$ = this.store.select(
     notificationFeature.selectNotificationState
   );
