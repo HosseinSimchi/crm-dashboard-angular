@@ -34,7 +34,6 @@ export class RevenueProfileChartComponent {
       },
     },
 
-    data: ['درآمد', 'سود'],
     xAxis: {
       type: 'category',
       data: [
@@ -51,9 +50,27 @@ export class RevenueProfileChartComponent {
         'بهمن',
         'دی',
       ],
+      axisLabel: {
+        fontSize: 12,
+        fontFamily: 'IRANSans',
+        formatter: (val: any) => persianDigits(val),
+      },
+    },
+    legend: {
+      data: ['درآمد', 'سود'],
+      top: 0,
+      textStyle: {
+        fontFamily: 'IRANSans',
+        fontSize: 13,
+      },
     },
     yAxis: {
       type: 'value',
+      axisLabel: {
+        fontSize: 12,
+        fontFamily: 'IRANSans',
+        formatter: (value: any) => value,
+      },
     },
     series: [
       {

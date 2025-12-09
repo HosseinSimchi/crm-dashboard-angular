@@ -7,81 +7,12 @@
         <div class="row">
           <app-sub-header />
           <app-charts-section />
-          <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
-            <div class="card">
-              <div class="card-header justify-between">
-                <h4 class="">خط لوله فروش</h4>
-                <div class="card-dropdown">
-                  <div class="dropdown">
-                    <a
-                      aria-expanded="false"
-                      class="card-dropdown-icon"
-                      data-bs-toggle="dropdown"
-                      href="javascript:void(0);"
-                      role="button"
-                    >
-                      <i class="ri-more-2-fill"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >امروز</a
-                      >
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >این هفته</a
-                      >
-                      <a class="dropdown-item active" href="javascript:void(0);"
-                        >این ماه</a
-                      >
-                      <a class="dropdown-item" href="javascript:void(0);"
-                        >امسال</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body pt-15">
-                <div id="contacts-source"></div>
-                <div class="pipeline-stats mt-20">
-                  <div class="d-flex justify-between align-center mb-8">
-                    <div class="d-flex align-center gap-10">
-                      <span class="bullet bg-primary"></span>
-                      <span class="fs-14">چشم انداز</span>
-                    </div>
-                    <span class="fw-500"
-                      >124<span class="text-muted">(25 ٪)</span></span
-                    >
-                  </div>
-                  <div class="d-flex justify-between align-center mb-8">
-                    <div class="d-flex align-center gap-10">
-                      <span class="bullet bg-info"></span>
-                      <span class="fs-14">واجد شرایط</span>
-                    </div>
-                    <span class="fw-500"
-                      >98<span class="text-muted">(20 ٪)</span></span
-                    >
-                  </div>
-                  <div class="d-flex justify-between align-center mb-8">
-                    <div class="d-flex align-center gap-10">
-                      <span class="bullet bg-warning"></span>
-                      <span class="fs-14">مذاکره</span>
-                    </div>
-                    <span class="fw-500"
-                      >76<span class="text-muted">(15 ٪)</span></span
-                    >
-                  </div>
-                  <div class="d-flex justify-between align-center">
-                    <div class="d-flex align-center gap-10">
-                      <span class="bullet bg-success"></span>
-                      <span class="fs-14">وانت</span>
-                    </div>
-                    <span class="fw-500"
-                      >202<span class="text-muted">(40 ٪)</span></span
-                    >
-                  </div>
-                </div>
-              </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <app-pipeline-radial-chart />
             </div>
           </div>
+
           <div class="col-xxl-3 col-xl-6 col-lg-6 col-md-6">
             <div class="card">
               <div class="card-header justify-between">

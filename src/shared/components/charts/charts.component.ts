@@ -23,11 +23,17 @@ export class ChartsComponent {
       const option = CHART_OPTIONS;
 
       option.tooltip = this.chartInfo().tooltip;
-      option.legend.data = this.chartInfo().data;
-      option.xAxis.type = this.chartInfo().xAxis.type;
-      option.xAxis.data = this.chartInfo().xAxis.data;
 
-      option.yAxis.type = this.chartInfo().yAxis.type;
+      option.legend = this.chartInfo().legend;
+
+      option.xAxis = this.chartInfo()?.xAxis ?? undefined;
+
+      option.yAxis = this.chartInfo()?.yAxis ?? undefined;
+
+      option.angleAxis = this.chartInfo()?.angleAxis ?? undefined;
+      option.radiusAxis = this.chartInfo()?.radiusAxis ?? undefined;
+
+      option.polar = this.chartInfo()?.polar ?? undefined;
 
       option.series = this.chartInfo().series;
 

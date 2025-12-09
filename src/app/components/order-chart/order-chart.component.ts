@@ -31,8 +31,14 @@ export class OrderChartComponent {
         return result;
       },
     },
-
-    data: ['سفارش‌های تکمیل‌شده', 'سفارش‌های در انتظار', 'سفارش‌های لغوشده'],
+    legend: {
+      data: ['سفارش‌های تکمیل‌شده', 'سفارش‌های در انتظار', 'سفارش‌های لغوشده'],
+      top: 0,
+      textStyle: {
+        fontFamily: 'IRANSans',
+        fontSize: 13,
+      },
+    },
     xAxis: {
       type: 'category',
       data: [
@@ -44,9 +50,19 @@ export class OrderChartComponent {
         'سه‌شنبه',
         'دوشنبه',
       ],
+      axisLabel: {
+        fontSize: 12,
+        fontFamily: 'IRANSans',
+        formatter: (val: any) => persianDigits(val),
+      },
     },
     yAxis: {
       type: 'value',
+      axisLabel: {
+        fontSize: 12,
+        fontFamily: 'IRANSans',
+        formatter: (value: any) => value,
+      },
     },
     series: [
       {
