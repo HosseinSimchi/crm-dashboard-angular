@@ -4,10 +4,11 @@ import { SubHeaderComponent } from '../sub-header/sub-header.component';
 import { ChartsSectionComponent } from '../charts-section/charts-section.component';
 import { OrderChartComponent } from '../order-chart/order-chart.component';
 import { RevenueProfileChartComponent } from '../revenue-profile-chart/revenue-profile-chart.component';
+import { PipelineRadialChartComponent } from "../pipeline-radial-chart/pipeline-radial-chart.component";
 
 @Component({
   selector: 'app-layout',
-  imports: [HeaderComponent, SubHeaderComponent, ChartsSectionComponent, OrderChartComponent, RevenueProfileChartComponent],
+  imports: [HeaderComponent, SubHeaderComponent, ChartsSectionComponent, OrderChartComponent, RevenueProfileChartComponent, PipelineRadialChartComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss',
 })
